@@ -1,3 +1,5 @@
+---
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -77,11 +79,22 @@
                 <li>Technology and History</li>
             </ul>
         </section>
+		<section id="posts">
+            <h2>Research Notebook Posts</h2>
+            <ul>
+                {% for post in site.posts %}
+                    <li>
+                        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+                        <span style="color: #777; font-size: 0.9em;">— {{ post.date | date: "%B %-d, %Y" }}</span>
+                    </li>
+                {% endfor %}
+            </ul>
+        </section>
     </main>
 
     <footer>
-        <p>Get in touch: <a href="mailto:your.email@ncsu.edu">your.email@ncsu.edu</a></p>
-        <p>&copy; 2026 [Your Name]. Hosted on GitHub Pages.</p>
+        <p>Get in touch: <a href="mailto:jmgoodw3@ncsu.edu">your.email@ncsu.edu</a></p>
+        <p>&copy; 2026 Jonas Goodwin. Hosted on GitHub Pages.</p>
     </footer>
 
 </body>

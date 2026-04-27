@@ -1,0 +1,87 @@
+.hermeneutics-toggle-container {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 2px solid #cc0000;
+}
+
+#hermeneutics-toggle {
+  background-color: #cc0000;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+  font-family: inherit;
+}
+
+#hermeneutics-toggle:hover {
+  background-color: #990000;
+}
+
+#hermeneutics-panel {
+  margin-top: 1.5rem;
+  padding: 1.5rem;
+  background-color: #f9f9f9;
+  border-left: 4px solid #cc0000;
+  border-radius: 4px;
+}
+
+.hermeneutics-intro {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #ddd;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.hermeneutics-body h2 {
+  margin-top: 2rem;
+  color: #cc0000;
+  font-size: 1.3rem;
+}
+
+.hermeneutics-body h3 {
+  margin-top: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.hermeneutics-body pre {
+  background-color: #2d2d2d;
+  color: #f8f8f2;
+  padding: 1rem;
+  border-radius: 4px;
+  overflow-x: auto;
+  font-size: 0.85rem;
+}
+
+.hermeneutics-body code {
+  font-family: 'Courier New', monospace;
+}
+
+.hermeneutics-body blockquote {
+  border-left: 3px solid #999;
+  padding-left: 1rem;
+  margin-left: 0;
+  color: #555;
+  font-style: italic;
+}
+
+.transcript-exchange {
+  background: white;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 4px;
+  border: 1px solid #e0e0e0;
+}
+
+.transcript-exchange .speaker-jonas {
+  font-weight: bold;
+  color: #cc0000;
+}
+
+.transcript-exchange .speaker-claude {
+  font-weight: bold;
+  color: #555;
+}

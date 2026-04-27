@@ -1,0 +1,48 @@
+---
+layout: default
+---
+<article class="post">
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+    <p class="post-meta">{{ page.date | date: "%B %-d, %Y" }}</p>
+  </header>
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+
+  {% if page.hermeneutics %}
+    <div class="hermeneutics-toggle-container">
+      <button id="hermeneutics-toggle" onclick="toggleHermeneutics()">
+        Show hermeneutics layer ▼
+      </button>
+      <div id="hermeneutics-panel" style="display: none;">
+        <div class="hermeneutics-intro">
+          <p><em>This panel exposes the methodological and technical scaffolding behind the post above. Inspired by the <a href="https://journalofdigitalhistory.org/" target="_blank">Journal of Digital History</a>'s three-layer model, the hermeneutics layer makes visible the sources, tools, and decisions that shaped the narrative.</em></p>
+        </div>
+        <div class="hermeneutics-body">
+          {% assign herm = site.hermeneutics | where: "post_ref", page.slug | first %}
+          {% if herm %}
+            {{ herm.content }}
+          {% else %}
+            <p><em>Hermeneutics content not found for this post.</em></p>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function toggleHermeneutics() {
+        var panel = document.getElementById('hermeneutics-panel');
+        var button = document.getElementById('hermeneutics-toggle');
+        if (panel.style.display === 'none') {
+          panel.style.display = 'block';
+          button.innerHTML = 'Hide hermeneutics layer ▲';
+        } else {
+          panel.style.display = 'none';
+          button.innerHTML = 'Show hermeneutics layer ▼';
+        }
+      }
+    </script>
+  {% endif %}
+</article>
