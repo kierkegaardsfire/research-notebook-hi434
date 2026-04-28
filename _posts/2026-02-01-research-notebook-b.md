@@ -5,13 +5,16 @@ date: 2026-02-01
 hermeneutics: true
 ---
 
-# Research Notebook - History 434
-## Jonas Goodwin
-### February 1st, 2026
+<h2>Research Notebook - History 434</h2>
+<h3>Jonas Goodwin</h3>
+<h3>February 1st, 2026</h3>
+
 Website publishing is the chief medium by which digital history is presented to its intended audience. The process of web publishing is connected with minimal computing with the theme of accesibility - when building a website we should consider ways in which to make the content more accesible to a wide audience. Consider people around the world who have varying levels of access to the internet, and how we can make our data usable by as many people as possible. I will keep these ideas in mind as I continue to develop my own plans for publishing a digital history website.
 
 
 <h1 align="center"><em>Research Notebook B Revision</em></h1>
+<h2 align="center">Jonas Goodwin</h2>
+<h2 align="center">April 27th, 2026</h2>
 
 While revisiting this workshop, I realized that I didn’t really comprehend the requirements the first time I completed it (my own fault for not preparing more.) In my first effort I think I believed I was creating a static website in github, when in reality I was just adding markdown file.
 
