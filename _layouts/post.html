@@ -1,48 +1,94 @@
 ---
 layout: default
 ---
-<article class="post">
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
   <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-meta">{{ page.date | date: "%B %-d, %Y" }}</p>
+    <h1 class="post-title p-name" itemprop="name headline">{{ page.title }}</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+        {{ page.date | date: "%B %-d, %Y" }}
+      </time>
+    </p>
+
+    {% if page.hermeneutics %}
+    {% assign herm = site.hermeneutics | where: "post_ref", page.slug | first %}
+    {% if herm %}
+<div class="layer-switcher">
+  <button class="layer-btn active" data-layer="narrative" onclick="switchLayer('narrative')">
+    <span class="layer-icon">&#9998;</span> <span class="btn-label">Narrative</span>
+  </button>
+  <button class="layer-btn" data-layer="hermeneutics" onclick="switchLayer('hermeneutics')">
+    <span class="layer-icon">&#128269;</span> <span class="btn-label">Hermeneutics</span>
+  </button>
+</div>
+    {% endif %}
+    {% endif %}
   </header>
 
-  <div class="post-content">
-    {{ content }}
+  <div class="post-content e-content" itemprop="articleBody">
+
+    {% if page.hermeneutics %}
+      {% assign herm = site.hermeneutics | where: "post_ref", page.slug | first %}
+      {% if herm %}
+
+        <!-- NARRATIVE LAYER (default view) -->
+        <div class="layer layer-narrative active" id="layer-narrative">
+          {{ content }}
+        </div>
+
+        <!-- HERMENEUTICS LAYER -->
+        <div class="layer layer-hermeneutics" id="layer-hermeneutics">
+          <div class="herm-intro">
+            <p>You are viewing the <strong>hermeneutics layer</strong> of this post. Inspired by the <a href="https://journalofdigitalhistory.org/" target="_blank">Journal of Digital History</a>&rsquo;s multilayered publication model, this layer exposes the methodological scaffolding, tool decisions, and conversation excerpts that shaped the narrative above.</p>
+            <p class="herm-instruction">Each cell below corresponds to a passage in the narrative. Switch back to <em>Narrative</em> at any time.</p>
+          </div>
+          {{ herm.content }}
+        </div>
+
+      {% else %}
+        {{ content }}
+      {% endif %}
+    {% else %}
+      {{ content }}
+    {% endif %}
+
   </div>
 
   {% if page.hermeneutics %}
-    <div class="hermeneutics-toggle-container">
-      <button id="hermeneutics-toggle" onclick="toggleHermeneutics()">
-        Show hermeneutics layer ▼
-      </button>
-      <div id="hermeneutics-panel" style="display: none;">
-        <div class="hermeneutics-intro">
-          <p><em>This panel exposes the methodological and technical scaffolding behind the post above. Inspired by the <a href="https://journalofdigitalhistory.org/" target="_blank">Journal of Digital History</a>'s three-layer model, the hermeneutics layer makes visible the sources, tools, and decisions that shaped the narrative.</em></p>
-        </div>
-        <div class="hermeneutics-body">
-          {% assign herm = site.hermeneutics | where: "post_ref", page.slug | first %}
-          {% if herm %}
-            {{ herm.content }}
-          {% else %}
-            <p><em>Hermeneutics content not found for this post.</em></p>
-          {% endif %}
-        </div>
-      </div>
-    </div>
+<script>
+function switchLayer(layer) {
+  var narrative = document.getElementById('layer-narrative');
+  var hermeneutics = document.getElementById('layer-hermeneutics');
+  var btnNarrative = document.querySelector('[data-layer="narrative"] .btn-label');
+  var btnHermeneutics = document.querySelector('[data-layer="hermeneutics"] .btn-label');
 
-    <script>
-      function toggleHermeneutics() {
-        var panel = document.getElementById('hermeneutics-panel');
-        var button = document.getElementById('hermeneutics-toggle');
-        if (panel.style.display === 'none') {
-          panel.style.display = 'block';
-          button.innerHTML = 'Hide hermeneutics layer ▲';
-        } else {
-          panel.style.display = 'none';
-          button.innerHTML = 'Show hermeneutics layer ▼';
-        }
-      }
-    </script>
+  if (layer === 'hermeneutics') {
+    narrative.classList.remove('active');
+    hermeneutics.classList.add('active');
+    btnNarrative.textContent = 'Hyde';
+    btnHermeneutics.textContent = 'Jekyll';
+    document.body.classList.add('hyde-mode');   // <-- ADD THIS
+  } else {
+    hermeneutics.classList.remove('active');
+    narrative.classList.add('active');
+    btnNarrative.textContent = 'Narrative';
+    btnHermeneutics.textContent = 'Hermeneutics';
+    document.body.classList.remove('hyde-mode'); // <-- ADD THIS
+  }
+
+  var buttons = document.querySelectorAll('.layer-btn');
+  buttons.forEach(function(btn) {
+    if (btn.getAttribute('data-layer') === layer) {
+      btn.classList.add('active');
+    } else {
+      btn.classList.remove('active');
+    }
+  });
+
+  document.querySelector('.post-content').scrollIntoView({ behavior: 'smooth' });
+}
+</script>
   {% endif %}
+
 </article>
