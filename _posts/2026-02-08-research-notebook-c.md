@@ -42,13 +42,11 @@ trinity_style: true
 <!-- ===================== REVISED ENTRY (May 1, 2026) ===================== -->
 
 <div class="trinity-title-block">
-<h1><em>Research Notebook C Revision</em></h1>
+<h1><em>Research Notebook C Revision: Processes and Power of Data</em></h1>
 <div class="trinity-author">Jonas Goodwin</div>
 <div class="trinity-date">May 1st, 2026</div>
 </div>
 
-
-<h3 class="trinity-section-heading">Data: Processes and Power</h3>
 
 <div class="trinity-para">
 <span class="trinity-para-marker"><span class="pilcrow">¶</span> <a href="#p2">2</a></span>
