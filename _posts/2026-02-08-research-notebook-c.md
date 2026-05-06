@@ -179,12 +179,4 @@ Comments are closed
 </div>
 
 
-<div class="trinity-cite">
-<img src="https://i.creativecommons.org/l/by-nc/3.0/us/88x31.png" alt="Creative Commons Attribution-NonCommercial 3.0 United States">
-This work is distributed under a <a href="https://creativecommons.org/licenses/by-nc/3.0/us/">Creative Commons Attribution-NonCommercial 3.0 United States</a> license. You may freely share it under these terms with a source citation.<br>
-How to cite:<br>
-Jonas Michael Goodwin, "Research Notebook C," in <em>HI 434 Research Notebook</em>. North Carolina State University web edition, Spring 2026, https://kierkegaardsfire.github.io/research-notebook-hi434/.
-</div>
-
-
 </div><!-- end trinity-page-wrapper -->
