@@ -18,10 +18,7 @@ Website publishing is the chief medium by which digital history is presented to 
 
 While revisiting this workshop, I realized that I didn’t really comprehend the requirements the first time I completed it (my own fault for not preparing more.) In my first effort I think I believed I was creating a static website in github, when in reality I was just adding markdown file.
 
-In any case, two weeks ago on April 11th I came back to the project again for the first time. Getting a better understanding of the requirements and guidelines, I was able to use Gemini to produce the html code necessary for a very rudimentary site, and to publish the html file in Github [(index.html in repository)](https://github.com/jmgoodw3_ncstate/Research-Notebook---HI-434/blob/main/index.html):
-
-[Screenshot of HTML preview](https://drive.google.com/file/d/1zvPtATafIKUJuoB29LeVVJRzD8YjuWUa/view?usp=sharing)
-
+In any case, two weeks ago on April 11th I came back to the project again for the first time. Getting a better understanding of the requirements and guidelines, I was able to use Gemini to produce the html code necessary for a very rudimentary site, and to publish the html file in Github [(index.html in repository)](https://github.com/jmgoodw3_ncstate/Research-Notebook---HI-434/blob/main/index.html). This original template now serves as the homepage for this site: https://kierkegaardsfire.github.io/research-notebook-hi434/. 
 
 However, I wasn’t super enthusiastic about this final product. Now, having returned to the project again, I wanted to try a different approach, and so I embarked on the ProgrammingHistorian’s [extensive lesson](https://programminghistorian.org/en/lessons/building-static-sites-with-jekyll-github-pages) on building static websites with Jekyll and GitHub Pages. As I struggled through the paragraphs of background information which preceded the actual instructions, I quickly decided to use Claude.ai to synthesize the tutorial in a time-saving manner. Initially Claude simply showed me the actual starting point in the tutorial and sent me off on my own, but eventually I began to use it in a more active role when certain parts of the tutorial didn’t fit with the goals of my specific project. 
 
