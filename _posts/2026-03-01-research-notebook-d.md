@@ -93,6 +93,8 @@ Having resolved this problem, I was free to create my line graph. However, this 
 
 As you can see, there was not the correlation I anticipated, although the very highest salary was indeed also one of the highest ages. I am not sure if the dataset I got was generated somehow, or if it was taken from real corporate data and anonymized in some way. In any case, I decided to look at other variables to try. I thought about swapping out "age" for "department" to see any pay disparity between the 7 divisions of the company: IT, Engineering, Sales, HR, Finance, Accounting, and Marketing. The results here, while not shocking, were more satisfying:
 
+![Salary by department]({{ "/assets/images/satisfying.png" | relative_url }})
+
 I sorted the bars in ascending order for better visualization. The results showed that marketing led the pack with an average salary of about $130,000, while IT trailed behind their co-workers, coming in at just under $100,000.
 
 <h1 align="center"><em>Research Notebook D Revision</em></h1>
