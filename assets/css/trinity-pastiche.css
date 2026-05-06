@@ -1,152 +1,258 @@
 /* =====================================================================
-   TRINITY-PASTICHE.CSS
-   A loving parody of the Writing History in the Digital Age (2012)
-   web-book style by Trinity College, powered by CommentPress.
+   TRINITY-PASTICHE.CSS  (revised)
+   Closer visual match to writinghistory.trincoll.edu / CommentPress.
    Activated when a post has  trinity_style: true  in its front matter.
    ===================================================================== */
 
 
-/* When trinity-mode is active, override the body styling for the whole post page */
+/* ---------- BASE BODY STYLES ---------- */
 body.trinity-mode {
-  font-family: Tahoma, Verdana, Geneva, sans-serif;
-  background: #ffffff;
-  color: #333333;
-  font-size: 13px;
-  line-height: 1.55;
+  font-family: "Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", Verdana, sans-serif;
+  background: #d8d6c8;     /* the warm olive-gray surrounding the cream page */
+  color: #2d2d2d;
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
 }
 
-body.trinity-mode .post-title,
+
+/* ---------- DARK HEADER BAR (the "Writing History..." banner) ---------- */
+body.trinity-mode .trinity-site-header {
+  background: #4a3f2c;          /* dark olive/brown */
+  color: #ffffff;
+  padding: 18px 32px;
+  margin: 0;
+  border-bottom: 4px solid #3a2f1f;
+}
+
+body.trinity-mode .trinity-site-header h1 {
+  font-family: "Lucida Sans", "Lucida Grande", Verdana, sans-serif;
+  font-size: 28px;
+  font-weight: 300;
+  color: #ffffff;
+  margin: 0 0 4px 0;
+  border: none;
+  padding: 0;
+}
+
+body.trinity-mode .trinity-site-header .trinity-site-subtitle {
+  font-size: 14px;
+  color: #d8c8a8;
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/* ---------- BREADCRUMB ROW (above the dark header) ---------- */
+body.trinity-mode .trinity-top-bar {
+  background: #999;
+  color: #fff;
+  font-size: 11px;
+  padding: 6px 32px;
+  text-align: right;
+  border-bottom: 1px solid #888;
+}
+
+
+/* ---------- THE CREAM "PAGE" CONTAINER ---------- */
+body.trinity-mode .trinity-page-wrapper {
+  background: #faf6ec;          /* the cream parchment of the article area */
+  max-width: 760px;
+  margin: 24px auto;
+  padding: 32px 44px;
+  border: 1px solid #b8b4a4;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.08);
+}
+
+/* Hide the default Minima site header/footer when in trinity mode */
+body.trinity-mode .site-header,
+body.trinity-mode .site-footer {
+  display: none !important;
+}
+
+
+/* ---------- HEADINGS ---------- */
 body.trinity-mode h1,
+body.trinity-mode .trinity-page-wrapper h1 {
+  font-family: "Lucida Sans", "Lucida Grande", Verdana, sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #6e1d1d;               /* deep mocha/burgundy */
+  border: none;
+  margin: 0 0 8px 0;
+  padding: 0;
+  line-height: 1.25;
+}
+
 body.trinity-mode h2,
 body.trinity-mode h3,
 body.trinity-mode h4 {
-  font-family: Tahoma, Verdana, Geneva, sans-serif;
-  color: #1f5c8c;
-  font-weight: normal;
-}
-
-body.trinity-mode h1 {
-  font-size: 22px;
-  border-bottom: 1px solid #d0d0d0;
-  padding-bottom: 8px;
-  margin-bottom: 4px;
+  font-family: "Lucida Sans", "Lucida Grande", Verdana, sans-serif;
+  color: #3d3d3d;
+  font-weight: 600;
 }
 
 body.trinity-mode .post-meta {
-  font-size: 11px;
-  color: #888;
+  display: none;
 }
 
 body.trinity-mode a {
-  color: #1f5c8c;
+  color: #6e1d1d;
   text-decoration: underline;
+  text-decoration-color: #6e1d1d;
 }
 
 body.trinity-mode a:hover {
-  color: #cc3300;
-}
-
-
-/* ---------- BREADCRUMB HEADER (the "Part 4 → Title" nav) ---------- */
-.trinity-breadcrumb {
-  font-size: 11px;
-  color: #555;
-  border-bottom: 1px solid #ddd;
-  padding-bottom: 6px;
-  margin-bottom: 18px;
-  font-style: italic;
-}
-
-.trinity-breadcrumb a {
-  color: #1f5c8c;
-  text-decoration: none;
-}
-
-.trinity-breadcrumb a:hover {
-  text-decoration: underline;
+  color: #a82828;
 }
 
 
 /* ---------- TITLE BLOCK ---------- */
 .trinity-title-block {
-  margin: 14px 0 28px 0;
+  margin: 0 0 22px 0;
+  padding-bottom: 14px;
 }
 
 .trinity-title-block .trinity-subtitle {
-  font-size: 15px;
-  color: #333;
-  font-style: italic;
+  font-size: 16px;
+  color: #444;
   margin-top: 4px;
+  font-weight: normal;
 }
 
 .trinity-title-block .trinity-author {
-  font-size: 13px;
-  color: #555;
-  margin-top: 14px;
+  font-size: 15px;
+  color: #444;
+  margin-top: 18px;
+  font-weight: normal;
+}
+
+.trinity-title-block .trinity-author::before {
+  content: "by ";
+  color: #444;
 }
 
 .trinity-title-block .trinity-date {
-  font-size: 11px;
-  color: #999;
-  margin-top: 4px;
+  font-size: 13px;
+  color: #888;
+  margin-top: 6px;
 }
 
 
-/* ---------- PARAGRAPH MARKERS (¶ N + Leave a comment link) ---------- */
+/* ---------- "SEE ALSO" LINKS (mimicking the original's sub-edition links) ---------- */
+.trinity-see-also {
+  margin: 14px 0 22px 0;
+  font-size: 14px;
+}
+
+.trinity-see-also p {
+  margin: 6px 0;
+}
+
+
+/* ---------- PARAGRAPH BLOCK ---------- */
 .trinity-para {
+  display: grid;
+  grid-template-columns: 56px 1fr 32px;
+  gap: 16px;
+  align-items: start;
   margin: 0 0 18px 0;
-  padding-left: 0;
-  position: relative;
+  padding: 4px 0;
 }
 
 .trinity-para-marker {
-  display: inline;
-  font-size: 11px;
-  color: #1f5c8c;
+  font-size: 12px;
+  color: #888;
+  text-align: right;
+  padding-top: 2px;
   white-space: nowrap;
-  margin-right: 6px;
 }
 
 .trinity-para-marker .pilcrow {
   font-weight: bold;
-  margin-right: 4px;
+  color: #888;
+  margin-right: 2px;
 }
 
 .trinity-para-marker a {
+  color: #888;
   text-decoration: none;
-  color: #1f5c8c;
 }
 
 .trinity-para-marker a:hover {
   text-decoration: underline;
+  color: #6e1d1d;
 }
 
+/* The "Leave a comment on paragraph N" link is hidden visually
+   in the actual original, replaced by a small balloon icon in the
+   right margin. We'll do the same. */
 .trinity-comment-link {
-  font-size: 11px;
-  color: #888;
-  margin-right: 8px;
-}
-
-.trinity-comment-link::before {
-  content: "[";
-}
-
-.trinity-comment-link::after {
-  content: "]";
+  position: absolute;
+  left: -9999px;
 }
 
 .trinity-comment-count {
+  text-align: left;
   font-size: 11px;
   color: #888;
-  margin-right: 8px;
-  font-weight: bold;
+  padding-top: 2px;
+}
+
+.trinity-comment-count::before {
+  content: "💬 ";
+  filter: grayscale(100%) opacity(0.5);
+  margin-right: 2px;
 }
 
 .trinity-para-text {
-  display: inline;
-  font-size: 13px;
-  line-height: 1.55;
-  color: #333;
+  font-size: 14px;
+  line-height: 1.65;
+  color: #2d2d2d;
+}
+
+
+/* ---------- SECTION DIVIDER ---------- */
+.trinity-section-divider {
+  margin: 32px 0 24px 0;
+  text-align: center;
+  position: relative;
+}
+
+.trinity-divider-rule {
+  border: none;
+  border-top: 1px solid #c8c0a8;
+  margin: 0 0 -8px 0;
+}
+
+.trinity-section-divider .trinity-divider-rule:last-child {
+  margin: -8px 0 0 0;
+}
+
+.trinity-divider-label {
+  display: inline-block;
+  background: #faf6ec;
+  color: #6e1d1d;
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 0 14px;
+  position: relative;
+  z-index: 1;
+  font-weight: 600;
+}
+
+
+/* ---------- SECTION SUBHEADINGS ---------- */
+.trinity-section-heading {
+  font-family: "Lucida Sans", "Lucida Grande", Verdana, sans-serif;
+  font-size: 16px;
+  color: #6e1d1d;
+  font-weight: 600;
+  margin: 28px 0 12px 0;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #d4cebc;
 }
 
 
@@ -159,8 +265,8 @@ body.trinity-mode a:hover {
 .trinity-figure img {
   max-width: 100%;
   height: auto;
-  border: 1px solid #ccc;
-  padding: 3px;
+  border: 1px solid #b8b4a4;
+  padding: 4px;
   background: #fff;
   cursor: zoom-in;
   display: block;
@@ -168,7 +274,7 @@ body.trinity-mode a:hover {
 }
 
 .trinity-figure-caption {
-  font-size: 11px;
+  font-size: 12px;
   color: #555;
   font-style: italic;
 }
@@ -181,16 +287,17 @@ body.trinity-mode a:hover {
 
 /* ---------- FOOTNOTES ---------- */
 .trinity-footnotes {
-  margin-top: 36px;
+  margin-top: 32px;
   padding-top: 14px;
-  border-top: 1px solid #ddd;
-  font-size: 11px;
-  color: #555;
-  line-height: 1.5;
+  border-top: 1px solid #c8c0a8;
+  font-size: 12px;
+  color: #444;
+  line-height: 1.55;
 }
 
 .trinity-footnotes ol {
   padding-left: 24px;
+  margin: 0;
 }
 
 .trinity-footnotes li {
@@ -198,40 +305,28 @@ body.trinity-mode a:hover {
 }
 
 .trinity-footnotes a {
-  color: #1f5c8c;
+  color: #6e1d1d;
 }
 
 
-/* ---------- "COMMENTS ARE CLOSED" + ABOUT THE AUTHOR ---------- */
-.trinity-author-bio {
-  font-style: italic;
-  font-size: 12px;
-  color: #555;
-  margin: 28px 0 20px 0;
-  padding: 12px;
-  background: #f7f7f0;
-  border-left: 3px solid #d0d0c0;
-}
-
+/* ---------- COMMENTS CLOSED + CITE ---------- */
 .trinity-comments-closed {
-  margin-top: 30px;
+  margin-top: 28px;
   padding: 12px;
-  background: #fafafa;
-  border: 1px solid #e0e0e0;
+  background: #f0ebda;
+  border: 1px solid #d4cebc;
   font-size: 12px;
   color: #888;
   font-style: italic;
   text-align: center;
 }
 
-
-/* ---------- HOW TO CITE FOOTER ---------- */
 .trinity-cite {
-  margin-top: 40px;
+  margin-top: 32px;
   padding-top: 14px;
-  border-top: 1px solid #d0d0d0;
-  font-size: 10px;
-  color: #777;
+  border-top: 1px solid #c8c0a8;
+  font-size: 11px;
+  color: #555;
   line-height: 1.5;
 }
 
@@ -241,93 +336,36 @@ body.trinity-mode a:hover {
 }
 
 
-/* ---------- THE PASTICHE NOTICE BANNER ---------- */
-.trinity-pastiche-notice {
-  background: #fff8d0;
-  border: 1px dashed #c0a040;
-  padding: 10px 14px;
-  font-size: 11px;
-  color: #6c5020;
-  margin: 0 0 22px 0;
-  font-family: Tahoma, Verdana, sans-serif;
-  font-style: italic;
-}
-
-.trinity-pastiche-notice strong {
-  font-style: normal;
-}
-
-
-/* ---------- BLOCKQUOTES STYLED IN THE SAME ERA ---------- */
+/* ---------- BLOCKQUOTE ---------- */
 body.trinity-mode blockquote {
   font-style: italic;
   color: #555;
-  border-left: 3px solid #1f5c8c;
+  border-left: 3px solid #6e1d1d;
   padding: 4px 14px;
   margin: 14px 18px;
-  background: #f6f9fc;
-  font-size: 12px;
+  background: #f0ebda;
+  font-size: 13px;
 }
 
 
-/* ---------- DARK MODE: don't apply Hyde mode if Trinity mode is active ---------- */
+/* ---------- ENSURE HYDE MODE DOESN'T APPLY HERE ---------- */
 body.trinity-mode.hyde-mode {
-  background: #ffffff !important;
-  color: #333333 !important;
-}
-/* ===========================================================
-   APPEND THIS TO THE END OF YOUR EXISTING trinity-pastiche.css
-   These styles support the section divider between the original
-   entry and the revision, plus the section subheads in the
-   revised entry (Data: Processes and Power, Categories, etc.)
-   =========================================================== */
-
-
-/* ---------- SECTION DIVIDER between original and revised entry ---------- */
-.trinity-section-divider {
-  margin: 36px 0 28px 0;
-  text-align: center;
-  position: relative;
-}
-
-.trinity-divider-rule {
-  border: none;
-  border-top: 1px solid #d0d0d0;
-  margin: 0 0 -8px 0;
-}
-
-.trinity-section-divider .trinity-divider-rule:last-child {
-  margin: -8px 0 0 0;
-}
-
-.trinity-divider-label {
-  display: inline-block;
-  background: #ffffff;
-  color: #1f5c8c;
-  font-size: 11px;
-  font-style: italic;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  padding: 0 14px;
-  position: relative;
-  z-index: 1;
+  background: #d8d6c8 !important;
+  color: #2d2d2d !important;
 }
 
 
-/* ---------- SECTION SUBHEADINGS within the revised entry ---------- */
-.trinity-section-heading {
-  font-family: Tahoma, Verdana, Geneva, sans-serif;
-  font-size: 14px;
-  color: #1f5c8c;
-  font-weight: bold;
-  margin: 28px 0 12px 0;
-  padding-bottom: 4px;
-  border-bottom: 1px dotted #c0c0c0;
-}
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 720px) {
+  body.trinity-mode .trinity-page-wrapper {
+    margin: 0;
+    padding: 24px 18px;
+    border: none;
+    box-shadow: none;
+  }
 
-
-/* ---------- ITALIC H1 (for "Research Notebook C Revision") ---------- */
-body.trinity-mode .trinity-title-block h1 em {
-  font-style: italic;
-  color: #1f5c8c;
+  .trinity-para {
+    grid-template-columns: 36px 1fr 24px;
+    gap: 8px;
+  }
 }
