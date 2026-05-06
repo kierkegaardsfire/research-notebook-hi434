@@ -191,11 +191,10 @@ body.github-mode .post-header {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 296px;
   gap: 24px;
-  max-width: 1280px;
+  max-width: 1400px;
   margin: 24px auto;
   padding: 0 32px;
 }
-
 
 /* ---------- README CARD ---------- */
 .gh-readme {
@@ -226,10 +225,11 @@ body.github-mode .post-header {
 }
 
 .gh-readme-body {
-  padding: 32px 48px;
+  padding: 32px 64px;
   color: #c9d1d9;
   line-height: 1.6;
   font-size: 16px;
+  max-width: 1012px;
 }
 
 .gh-readme-body h1 {
@@ -431,4 +431,20 @@ body.github-mode.hyde-mode,
 body.github-mode.trinity-mode {
   background: #0d1117 !important;
   color: #c9d1d9 !important;
+}
+
+body.github-mode .post,
+body.github-mode .post-content,
+body.github-mode .wrapper,
+body.github-mode .e-content,
+body.github-mode article {
+  max-width: none !important;
+  width: 100% !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+body.github-mode .gh-readme-wrapper {
+  width: 100%;
+  min-width: 0;
 }
