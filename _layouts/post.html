@@ -2,9 +2,15 @@
 layout: default
 ---
 <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
-
+{% if page.trinity_style %}
+<script>
+document.body.classList.add('trinity-mode');
+</script>
+{% endif %}
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">{{ page.title }}</h1>
+{% unless page.trinity_style %}
+<h1 class="post-title p-name" itemprop="name headline">{{ page.title }}</h1>
+{% endunless %}
     <p class="post-meta">
       <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
         {{ page.date | date: "%B %-d, %Y" }}
