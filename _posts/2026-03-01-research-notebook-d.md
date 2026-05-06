@@ -97,7 +97,7 @@ As you can see, there was not the correlation I anticipated, although the very h
 
 I sorted the bars in ascending order for better visualization. The results showed that marketing led the pack with an average salary of about $130,000, while IT trailed behind their co-workers, coming in at just under $100,000.
 
-<h1 align="center"><em>Research Notebook D Revision</em></h1>
+<h1 align="center"><em>Research Notebook D Revision: Visualization and Bias</em></h1>
 <h2 align="center">Jonas Goodwin</h2>
 <h2 align="center">May 5th, 2026</h2>
 
