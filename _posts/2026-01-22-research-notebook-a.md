@@ -71,7 +71,9 @@ document.body.classList.add('github-mode');
 
       <div class="gh-readme-body" markdown="1">
 
-# Research Notebook A — Revision
+<h1 align="center"><em>Research Notebook A Revision: GitHub and Web Publishing</em></h1>
+<h2 align="center">Jonas Goodwin</h2>
+<h2 align="center">May 5th, 2026</h2>
 
 Since first completing this workshop I have had a significant amount of additional experience while revising my notebook and, in the process, creating animations, interactive displays, and a range of other creative choices as a part of this site. This experience has made me more familiar than I ever thought I would be with a website that in the past seemed like an impenetrable obsidian wall, reserved for people with coding knowledge. Subconsciously I thought it must be a very limited platform — how could this boring, simple website provide something of value to millions of users? Even now that I've gained significant experience with the platform, the many ways in which people around the world utilize the platform for their personal projects is still a mystery to me, and I hope that I can take my knowledge from this class and apply it to fields other than digital history, and beyond even the digital humanities as well.
 
