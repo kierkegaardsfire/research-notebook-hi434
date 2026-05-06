@@ -77,7 +77,7 @@ trinity_style: true
 <a href="{{ '/assets/images/split.gif' | relative_url }}" target="_blank">
 <img src="{{ '/assets/images/split.gif' | relative_url }}" alt="Categories split cells in OpenRefine">
 </a>
-<div class="trinity-figure-caption"><strong>Figure 1:</strong> Graphic demonstrating category clusters in OpenRefine, from the Programming Historian's data-cleaning tutorial.</div>
+<div class="trinity-figure-caption"><strong>Figure 1:</strong> Splitting categories in OpenRefine, a process called "Atomization" which is one step in the ProgrammingHistorian's Tutorial </div>
 </div>
 
 
