@@ -13,15 +13,13 @@ trinity_style: true
 Part 3: Data, Categories, and the Archive →  Research Notebook C
 </div>
 
-<div class="trinity-pastiche-notice">
-<strong>Note:</strong> This page is styled as an homage to Jack Dougherty and Kristen Nawrotzki, eds., <em>Writing History in the Digital Age</em> (Trinity College web-book edition, Spring 2012), and specifically to Ansley T. Erickson's essay "Reflections on 10,000 Notecards," which I engage with directly below. The "Leave a comment on paragraph N" links are decorative — paragraph-level commenting requires a server-side application like the original site's CommentPress, which Jekyll/GitHub Pages cannot host.
-</div>
+
+<!-- ===================== ORIGINAL ENTRY (Feb 8, 2026) ===================== -->
 
 <div class="trinity-title-block">
-<h1>Data: Processes and Power</h1>
-<div class="trinity-subtitle">Reflections on Categories, Note-Taking, and the Violence of the Archive (revised May 2026)</div>
-<div class="trinity-author">by Jonas Michael Goodwin</div>
-<div class="trinity-date">Originally posted February 8, 2026; revised May 1, 2026</div>
+<h1>Research Notebook — History 434</h1>
+<div class="trinity-author">Jonas Goodwin</div>
+<div class="trinity-date">February 8th, 2026</div>
 </div>
 
 
@@ -29,23 +27,45 @@ Part 3: Data, Categories, and the Archive →  Research Notebook C
 <span class="trinity-para-marker"><span class="pilcrow">¶</span> <a href="#p1">1</a></span>
 <a class="trinity-comment-link" href="#">Leave a comment on paragraph 1</a>
 <span class="trinity-comment-count">0</span>
-<span class="trinity-para-text"><strong>Original entry, February 8, 2026.</strong> <a href="https://drive.google.com/file/d/1x5xmotpBM_aWLe4pbkEuDMMd-iKek90I/view?usp=sharing" target="_blank">Here</a> is a link to a screen recording of my work for the OpenRefine data-cleaning workshop this week. I found this workshop to be an engaging and surprisingly rewarding exercise, which increased my confidence in my ability to do work of this nature after initial doubts. While going through the workshop in class I thought back to the readings we did for this week and sympathized with the problems Erickson described in her article about the logistics of managing large data sets.</span>
+<span class="trinity-para-text"><a href="https://drive.google.com/file/d/1x5xmotpBM_aWLe4pbkEuDMMd-iKek90I/view?usp=sharing" target="_blank">Here</a> is a link to a screen recording of my work for the OpenRefine data-cleaning workshop this week. I found this workshop to be an engaging and surprisingly rewarding exercise, which increased my confidence in my ability to do work of this nature after initial doubts. While going through the workshop in class I thought back to the readings we did for this week and sympathized with the problems Erickson described in her article about the logistics of managing large data sets.</span>
 </div>
 
+
+<!-- ===================== SECTION DIVIDER ===================== -->
+
+<div class="trinity-section-divider">
+<hr class="trinity-divider-rule">
+<div class="trinity-divider-label">Revised Entry</div>
+<hr class="trinity-divider-rule">
+</div>
+
+
+<!-- ===================== REVISED ENTRY (May 1, 2026) ===================== -->
+
+<div class="trinity-title-block">
+<h1><em>Research Notebook C Revision</em></h1>
+<div class="trinity-author">Jonas Goodwin</div>
+<div class="trinity-date">May 1st, 2026</div>
+</div>
+
+
+<h3 class="trinity-section-heading">Data: Processes and Power</h3>
 
 <div class="trinity-para">
 <span class="trinity-para-marker"><span class="pilcrow">¶</span> <a href="#p2">2</a></span>
 <a class="trinity-comment-link" href="#">Leave a comment on paragraph 2</a>
 <span class="trinity-comment-count">0</span>
-<span class="trinity-para-text"><strong>Data: Processes and Power.</strong> Just as procedural nuances in the law often lead to substantive implications, the significance of the mundane procedures of research is often unrecognized.<a href="#fn1"><sup>1</sup></a> Through this unit I gained a new appreciation for the power of data, which would be reinforced in later units. I had never seriously considered the notion of "raw data" before. I was susceptible to the impulse to treat an archive as an objective fact, and that mindset may have led to a lack of caution when treating my own data for research. There may have been ways in the past in which I have unknowingly "cooked" my data in significant ways that altered my research. The readings, in combination with Programming Historian's tutorial, imbued a newfound academic caution in me — if by nothing more than making me realize how little I understand about the nuances of information science in the first place.</span>
+<span class="trinity-para-text">Just as procedural nuances in the law often lead to substantive implications, the significance of the mundane procedures of research is often unrecognized.<a href="#fn1"><sup>1</sup></a> Through this unit I gained a new appreciation for the power of data, which would be reinforced in later units. I had never seriously considered the notion of "raw data" before. I was susceptible to the impulse to treat an archive as an objective fact, and that mindset may have led to a lack of caution when treating my own data for research. There may have been ways in the past in which I have unknowingly "cooked" my data in significant ways that altered my research. The readings, in combination with Programming Historian's tutorial, imbued a newfound academic caution in me — if by nothing more than making me realize how little I understand about the nuances of information science in the first place.</span>
 </div>
 
+
+<h3 class="trinity-section-heading">Categories, The Problem Of</h3>
 
 <div class="trinity-para">
 <span class="trinity-para-marker"><span class="pilcrow">¶</span> <a href="#p3">3</a></span>
 <a class="trinity-comment-link" href="#">Leave a comment on paragraph 3</a>
 <span class="trinity-comment-count">0</span>
-<span class="trinity-para-text"><strong>Categories, the Problem Of.</strong> Categories may be the most concrete example of how the practice of historical research changes the history we create.<a href="#fn2"><sup>2</sup></a> Erickson's article delves into the issue explicitly, advocating for a new kind of "flexible categorization" that utilizes technology to reexamine the preconceived bias of existing structures. OpenRefine serves to validate Erickson's claim that databases are tools to achieve this flexibility, as the tutorial demonstrates how GREL expressions can be used for "ad-hoc transformations" to target minute errors in large datasets.</span>
+<span class="trinity-para-text">Categories may be the most concrete example of how the practice of historical research changes the history we create.<a href="#fn2"><sup>2</sup></a> Erickson's article delves into the issue explicitly, advocating for a new kind of "flexible categorization" that utilizes technology to reexamine the preconceived bias of existing structures. OpenRefine serves to validate Erickson's claim that databases are tools to achieve this flexibility, as the tutorial demonstrates how GREL expressions can be used for "ad-hoc transformations" to target minute errors in large datasets.</span>
 </div>
 
 
@@ -89,26 +109,30 @@ Part 3: Data, Categories, and the Archive →  Research Notebook C
 </div>
 
 
+<h3 class="trinity-section-heading">Note-taking</h3>
+
 <div class="trinity-para">
 <span class="trinity-para-marker"><span class="pilcrow">¶</span> <a href="#p8">8</a></span>
 <a class="trinity-comment-link" href="#">Leave a comment on paragraph 8</a>
 <span class="trinity-comment-count">0</span>
-<span class="trinity-para-text"><strong>Note-taking.</strong> In this process I, like Erickson, relied on many "notes to self" as a failsafe in case I made errors that needed to be corrected later.<a href="#fn4"><sup>4</sup></a> Unlike Erickson, I never considered using FileMaker Pro, NVivo, or Zotero (which I tried before and quickly gave up on). I simply recorded notes on whatever document I happened to be on, mainly spreadsheets:</span>
+<span class="trinity-para-text">In this process I, like Erickson, relied on many "notes to self" as a failsafe in case I made errors that needed to be corrected later.<a href="#fn4"><sup>4</sup></a> Unlike Erickson, I never considered using FileMaker Pro, NVivo, or Zotero (which I tried before and quickly gave up on). I simply recorded notes on whatever document I happened to be on, mainly spreadsheets:</span>
 </div>
 
-
-<!--
-  PLACEHOLDER FOR SPREADSHEET NOTES SCREENSHOT.
-  When you have the image, save it to assets/images/notebook-c-spreadsheet-notes.png
-  and uncomment the figure block below.
 
 <div class="trinity-figure">
-<a href="{{ '/assets/images/notebook-c-spreadsheet-notes.png' | relative_url }}" target="_blank">
-<img src="{{ '/assets/images/notebook-c-spreadsheet-notes.png' | relative_url }}" alt="Spreadsheet with handwritten-style note-taking">
+<a href="https://github.com/user-attachments/assets/ccd778cf-d8de-42e8-9920-52dd729dd408" target="_blank">
+<img src="https://github.com/user-attachments/assets/ccd778cf-d8de-42e8-9920-52dd729dd408" alt="Spreadsheet with workflow notes">
 </a>
-<div class="trinity-figure-caption"><strong>Figure 2:</strong> A representative section of my working spreadsheet during NAACP archive cross-referencing, with embedded notes ranging from descriptive workflow markers to cryptic single-number annotations.</div>
+<div class="trinity-figure-caption"><strong>Figure 2a:</strong> A section of my working spreadsheet during NAACP archive cross-referencing, with descriptive notes on workflow.</div>
 </div>
--->
+
+
+<div class="trinity-figure">
+<a href="https://github.com/user-attachments/assets/dbb9c375-432a-4e3d-916c-7c46b9a57a39" target="_blank">
+<img src="https://github.com/user-attachments/assets/dbb9c375-432a-4e3d-916c-7c46b9a57a39" alt="Spreadsheet with cryptic single-number annotations">
+</a>
+<div class="trinity-figure-caption"><strong>Figure 2b:</strong> Another section of the same spreadsheet, with the cryptic single-number annotations described below.</div>
+</div>
 
 
 <div class="trinity-para">
@@ -119,11 +143,13 @@ Part 3: Data, Categories, and the Archive →  Research Notebook C
 </div>
 
 
+<h3 class="trinity-section-heading">Note</h3>
+
 <div class="trinity-para">
 <span class="trinity-para-marker"><span class="pilcrow">¶</span> <a href="#p10">10</a></span>
 <a class="trinity-comment-link" href="#">Leave a comment on paragraph 10</a>
 <span class="trinity-comment-count">0</span>
-<span class="trinity-para-text"><strong>Note.</strong> In a previous seminar, some of my peers brought up the idea of the "Violence of the Archive," a concept they had learned about from previous classes and with which I was unfamiliar. This unit's discussion of archival theory and the power of data and archives caused me to recall this passing mention. Finding a short article on the phrase in <em>English Language Notes</em>, I was led down a fascinating JSTOR rabbit hole on archival theory and the philosophy of language.</span>
+<span class="trinity-para-text">In a previous seminar, some of my peers brought up the idea of the "Violence of the Archive," a concept they had learned about from previous classes and with which I was unfamiliar. This unit's discussion of archival theory and the power of data and archives caused me to recall this passing mention. Finding a short article on the phrase in <em>English Language Notes</em>, I was led down a fascinating JSTOR rabbit hole on archival theory and the philosophy of language.</span>
 </div>
 
 
@@ -176,5 +202,5 @@ Comments are closed
 <img src="https://i.creativecommons.org/l/by-nc/3.0/us/88x31.png" alt="Creative Commons Attribution-NonCommercial 3.0 United States">
 This work is distributed under a <a href="https://creativecommons.org/licenses/by-nc/3.0/us/">Creative Commons Attribution-NonCommercial 3.0 United States</a> license. You may freely share it under these terms with a source citation.<br>
 How to cite:<br>
-Jonas Michael Goodwin, "Data: Processes and Power," in <em>HI 434 Research Notebook</em>. North Carolina State University web edition, Spring 2026, https://kierkegaardsfire.github.io/research-notebook-hi434/.
+Jonas Michael Goodwin, "Research Notebook C," in <em>HI 434 Research Notebook</em>. North Carolina State University web edition, Spring 2026, https://kierkegaardsfire.github.io/research-notebook-hi434/.
 </div>
