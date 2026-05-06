@@ -275,3 +275,59 @@ body.trinity-mode.hyde-mode {
   background: #ffffff !important;
   color: #333333 !important;
 }
+/* ===========================================================
+   APPEND THIS TO THE END OF YOUR EXISTING trinity-pastiche.css
+   These styles support the section divider between the original
+   entry and the revision, plus the section subheads in the
+   revised entry (Data: Processes and Power, Categories, etc.)
+   =========================================================== */
+
+
+/* ---------- SECTION DIVIDER between original and revised entry ---------- */
+.trinity-section-divider {
+  margin: 36px 0 28px 0;
+  text-align: center;
+  position: relative;
+}
+
+.trinity-divider-rule {
+  border: none;
+  border-top: 1px solid #d0d0d0;
+  margin: 0 0 -8px 0;
+}
+
+.trinity-section-divider .trinity-divider-rule:last-child {
+  margin: -8px 0 0 0;
+}
+
+.trinity-divider-label {
+  display: inline-block;
+  background: #ffffff;
+  color: #1f5c8c;
+  font-size: 11px;
+  font-style: italic;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0 14px;
+  position: relative;
+  z-index: 1;
+}
+
+
+/* ---------- SECTION SUBHEADINGS within the revised entry ---------- */
+.trinity-section-heading {
+  font-family: Tahoma, Verdana, Geneva, sans-serif;
+  font-size: 14px;
+  color: #1f5c8c;
+  font-weight: bold;
+  margin: 28px 0 12px 0;
+  padding-bottom: 4px;
+  border-bottom: 1px dotted #c0c0c0;
+}
+
+
+/* ---------- ITALIC H1 (for "Research Notebook C Revision") ---------- */
+body.trinity-mode .trinity-title-block h1 em {
+  font-style: italic;
+  color: #1f5c8c;
+}
