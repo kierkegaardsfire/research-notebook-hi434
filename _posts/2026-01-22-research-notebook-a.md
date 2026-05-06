@@ -91,11 +91,11 @@ Although I feel lightyears ahead of the person I was in January when it comes to
 </ol>
 </div>
 
-      </div><!-- end gh-readme-body -->
+      </div> 
 
-    </div><!-- end gh-readme -->
+    </div> 
 
-  </div><!-- end gh-readme-wrapper -->
+  </div>
 
   <!-- SIDEBAR -->
   <aside class="gh-sidebar">
