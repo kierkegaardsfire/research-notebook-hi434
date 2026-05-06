@@ -73,12 +73,7 @@ trinity_style: true
 </div>
 
 
-<div class="trinity-figure">
-<a href="https://github.com/user-attachments/assets/acf9fe7a-0d03-4c9e-90f9-1864f94f4cfd" target="_blank">
-<img src="https://github.com/user-attachments/assets/acf9fe7a-0d03-4c9e-90f9-1864f94f4cfd" alt="Categories split cells in OpenRefine">
-</a>
-<div class="trinity-figure-caption"><strong>Figure 1:</strong> Graphic demonstrating category clusters in OpenRefine, from the Programming Historian's data-cleaning tutorial.</div>
-</div>
+![Split]({{ "/assets/images/split.gif" | relative_url }})
 
 
 <div class="trinity-para">
