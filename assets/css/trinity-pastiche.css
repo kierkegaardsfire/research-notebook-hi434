@@ -1,0 +1,277 @@
+/* =====================================================================
+   TRINITY-PASTICHE.CSS
+   A loving parody of the Writing History in the Digital Age (2012)
+   web-book style by Trinity College, powered by CommentPress.
+   Activated when a post has  trinity_style: true  in its front matter.
+   ===================================================================== */
+
+
+/* When trinity-mode is active, override the body styling for the whole post page */
+body.trinity-mode {
+  font-family: Tahoma, Verdana, Geneva, sans-serif;
+  background: #ffffff;
+  color: #333333;
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+body.trinity-mode .post-title,
+body.trinity-mode h1,
+body.trinity-mode h2,
+body.trinity-mode h3,
+body.trinity-mode h4 {
+  font-family: Tahoma, Verdana, Geneva, sans-serif;
+  color: #1f5c8c;
+  font-weight: normal;
+}
+
+body.trinity-mode h1 {
+  font-size: 22px;
+  border-bottom: 1px solid #d0d0d0;
+  padding-bottom: 8px;
+  margin-bottom: 4px;
+}
+
+body.trinity-mode .post-meta {
+  font-size: 11px;
+  color: #888;
+}
+
+body.trinity-mode a {
+  color: #1f5c8c;
+  text-decoration: underline;
+}
+
+body.trinity-mode a:hover {
+  color: #cc3300;
+}
+
+
+/* ---------- BREADCRUMB HEADER (the "Part 4 → Title" nav) ---------- */
+.trinity-breadcrumb {
+  font-size: 11px;
+  color: #555;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 6px;
+  margin-bottom: 18px;
+  font-style: italic;
+}
+
+.trinity-breadcrumb a {
+  color: #1f5c8c;
+  text-decoration: none;
+}
+
+.trinity-breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+
+/* ---------- TITLE BLOCK ---------- */
+.trinity-title-block {
+  margin: 14px 0 28px 0;
+}
+
+.trinity-title-block .trinity-subtitle {
+  font-size: 15px;
+  color: #333;
+  font-style: italic;
+  margin-top: 4px;
+}
+
+.trinity-title-block .trinity-author {
+  font-size: 13px;
+  color: #555;
+  margin-top: 14px;
+}
+
+.trinity-title-block .trinity-date {
+  font-size: 11px;
+  color: #999;
+  margin-top: 4px;
+}
+
+
+/* ---------- PARAGRAPH MARKERS (¶ N + Leave a comment link) ---------- */
+.trinity-para {
+  margin: 0 0 18px 0;
+  padding-left: 0;
+  position: relative;
+}
+
+.trinity-para-marker {
+  display: inline;
+  font-size: 11px;
+  color: #1f5c8c;
+  white-space: nowrap;
+  margin-right: 6px;
+}
+
+.trinity-para-marker .pilcrow {
+  font-weight: bold;
+  margin-right: 4px;
+}
+
+.trinity-para-marker a {
+  text-decoration: none;
+  color: #1f5c8c;
+}
+
+.trinity-para-marker a:hover {
+  text-decoration: underline;
+}
+
+.trinity-comment-link {
+  font-size: 11px;
+  color: #888;
+  margin-right: 8px;
+}
+
+.trinity-comment-link::before {
+  content: "[";
+}
+
+.trinity-comment-link::after {
+  content: "]";
+}
+
+.trinity-comment-count {
+  font-size: 11px;
+  color: #888;
+  margin-right: 8px;
+  font-weight: bold;
+}
+
+.trinity-para-text {
+  display: inline;
+  font-size: 13px;
+  line-height: 1.55;
+  color: #333;
+}
+
+
+/* ---------- FIGURES ---------- */
+.trinity-figure {
+  margin: 22px 0;
+  text-align: left;
+}
+
+.trinity-figure img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ccc;
+  padding: 3px;
+  background: #fff;
+  cursor: zoom-in;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.trinity-figure-caption {
+  font-size: 11px;
+  color: #555;
+  font-style: italic;
+}
+
+.trinity-figure-caption strong {
+  font-style: normal;
+  color: #333;
+}
+
+
+/* ---------- FOOTNOTES ---------- */
+.trinity-footnotes {
+  margin-top: 36px;
+  padding-top: 14px;
+  border-top: 1px solid #ddd;
+  font-size: 11px;
+  color: #555;
+  line-height: 1.5;
+}
+
+.trinity-footnotes ol {
+  padding-left: 24px;
+}
+
+.trinity-footnotes li {
+  margin-bottom: 8px;
+}
+
+.trinity-footnotes a {
+  color: #1f5c8c;
+}
+
+
+/* ---------- "COMMENTS ARE CLOSED" + ABOUT THE AUTHOR ---------- */
+.trinity-author-bio {
+  font-style: italic;
+  font-size: 12px;
+  color: #555;
+  margin: 28px 0 20px 0;
+  padding: 12px;
+  background: #f7f7f0;
+  border-left: 3px solid #d0d0c0;
+}
+
+.trinity-comments-closed {
+  margin-top: 30px;
+  padding: 12px;
+  background: #fafafa;
+  border: 1px solid #e0e0e0;
+  font-size: 12px;
+  color: #888;
+  font-style: italic;
+  text-align: center;
+}
+
+
+/* ---------- HOW TO CITE FOOTER ---------- */
+.trinity-cite {
+  margin-top: 40px;
+  padding-top: 14px;
+  border-top: 1px solid #d0d0d0;
+  font-size: 10px;
+  color: #777;
+  line-height: 1.5;
+}
+
+.trinity-cite img {
+  vertical-align: middle;
+  margin-right: 6px;
+}
+
+
+/* ---------- THE PASTICHE NOTICE BANNER ---------- */
+.trinity-pastiche-notice {
+  background: #fff8d0;
+  border: 1px dashed #c0a040;
+  padding: 10px 14px;
+  font-size: 11px;
+  color: #6c5020;
+  margin: 0 0 22px 0;
+  font-family: Tahoma, Verdana, sans-serif;
+  font-style: italic;
+}
+
+.trinity-pastiche-notice strong {
+  font-style: normal;
+}
+
+
+/* ---------- BLOCKQUOTES STYLED IN THE SAME ERA ---------- */
+body.trinity-mode blockquote {
+  font-style: italic;
+  color: #555;
+  border-left: 3px solid #1f5c8c;
+  padding: 4px 14px;
+  margin: 14px 18px;
+  background: #f6f9fc;
+  font-size: 12px;
+}
+
+
+/* ---------- DARK MODE: don't apply Hyde mode if Trinity mode is active ---------- */
+body.trinity-mode.hyde-mode {
+  background: #ffffff !important;
+  color: #333333 !important;
+}
